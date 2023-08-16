@@ -6,7 +6,7 @@ import UseReducer from './containers/UseReducer/UseReducer';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<Root />} >
+      <Route path='/' element={<RouterRoot />} >
         <Route index element={<Home />} />
         <Route path='/useReducer' element={<UseReducer />} />
       </Route>
@@ -15,14 +15,16 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router}/>
+      <div className='main'>
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
 
 export default App;
 
-const Root = () => {
+const RouterRoot = () => {
 
   return <>
     <header>
