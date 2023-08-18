@@ -2,6 +2,7 @@ import './App.css';
 import { Link, Outlet, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Home from './containers/Home/Home';
 import UseReducer from './containers/UseReducer/UseReducer';
+import UseRef from './containers/UseRef/UseRef';
 
 function App() {
   const router = createBrowserRouter(
@@ -9,6 +10,7 @@ function App() {
       <Route path='/' element={<RouterRoot />} >
         <Route index element={<Home />} />
         <Route path='/useReducer' element={<UseReducer />} />
+        <Route path='/useRef' element={<UseRef />} />
       </Route>
     )
   );
@@ -31,6 +33,7 @@ const RouterRoot = () => {
       <nav>
         <Link to={'/'} >Home</Link>
         <Link to={'/useReducer'} >UseReducer</Link>
+        <Link to={'/useRef'} >UseRef</Link>
       </nav>
     </header>
 
