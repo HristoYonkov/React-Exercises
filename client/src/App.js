@@ -3,6 +3,7 @@ import { Link, Outlet, Route, RouterProvider, createBrowserRouter, createRoutesF
 import Home from './containers/Home/Home';
 import UseReducer from './containers/UseReducer/UseReducer';
 import UseRef from './containers/UseRef/UseRef';
+import UseLayoutEffect from './containers/UseLayoutEffect/UseLayoutEffect';
 
 function App() {
   const router = createBrowserRouter(
@@ -11,6 +12,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path='/useReducer' element={<UseReducer />} />
         <Route path='/useRef' element={<UseRef />} />
+        <Route path='/useLayoutEffect' element={<UseLayoutEffect />} />
       </Route>
     )
   );
@@ -34,6 +36,7 @@ const RouterRoot = () => {
         <Link to={'/'} >Home</Link>
         <Link to={'/useReducer'} >UseReducer</Link>
         <Link to={'/useRef'} >UseRef</Link>
+        <Link to={'/useLayoutEffect'} >UseLayoutEffect</Link>
       </nav>
     </header>
 
