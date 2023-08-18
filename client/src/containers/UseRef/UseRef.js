@@ -6,6 +6,7 @@ const UseRef = () => {
     const titleRef = useRef(null);
 
     const buttonClick = () => {
+        // using focus(), you can directly type in the field
         // inputRef.current.focus();
         console.log(titleRef.current);
         titleRef.current.textContent = inputRef.current.value;
