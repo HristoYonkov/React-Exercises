@@ -36,10 +36,10 @@ const RouterRoot = () => {
     <header>
       <nav>
         <Link to={'/'} >Home</Link>
-        <Link to={'/useReducer'} >useReducer</Link>
-        <Link to={'/useRef'} >useRef</Link>
-        <Link to={'/useLayoutEffect'} >useLayoutEffect</Link>
-        <Link to={'/useImperativeHandle'} >useImperativeHandle</Link>
+        <Link to={'/useReducer'} >useReducer()</Link>
+        <Link to={'/useRef'} >useRef()</Link>
+        <Link to={'/useLayoutEffect'} >useLayoutEffect()</Link>
+        <Link to={'/useImperativeHandle'} >useImperativeHandle()</Link>
       </nav>
     </header>
 
