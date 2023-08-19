@@ -4,6 +4,7 @@ import Home from './containers/Home/Home';
 import UseReducer from './containers/UseReducer/UseReducer';
 import UseRef from './containers/UseRef/UseRef';
 import UseLayoutEffect from './containers/UseLayoutEffect/UseLayoutEffect';
+import UseImperativeHandle from './containers/UseImperativeHandle/UseImperativeHandle';
 
 function App() {
   const router = createBrowserRouter(
@@ -13,6 +14,7 @@ function App() {
         <Route path='/useReducer' element={<UseReducer />} />
         <Route path='/useRef' element={<UseRef />} />
         <Route path='/useLayoutEffect' element={<UseLayoutEffect />} />
+        <Route path='/useImperativeHandle' element={<UseImperativeHandle />} />
       </Route>
     )
   );
@@ -34,9 +36,10 @@ const RouterRoot = () => {
     <header>
       <nav>
         <Link to={'/'} >Home</Link>
-        <Link to={'/useReducer'} >UseReducer</Link>
-        <Link to={'/useRef'} >UseRef</Link>
-        <Link to={'/useLayoutEffect'} >UseLayoutEffect</Link>
+        <Link to={'/useReducer'} >useReducer</Link>
+        <Link to={'/useRef'} >useRef</Link>
+        <Link to={'/useLayoutEffect'} >useLayoutEffect</Link>
+        <Link to={'/useImperativeHandle'} >useImperativeHandle</Link>
       </nav>
     </header>
 
