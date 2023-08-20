@@ -10,7 +10,8 @@ const UseContext = () => {
     return (
         <useCTXContext.Provider value={{ username, setUsername }}>
             <h1>UseContext</h1>
-            <Login /> <User />
+            <Login />
+            <User />
         </useCTXContext.Provider>
     )
 }
