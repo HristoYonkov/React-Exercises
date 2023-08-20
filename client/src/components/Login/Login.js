@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { useCTXContext } from '../../containers/UseContext/UseContext';
 
-const Login = ({ setUsername }) => {
+const Login = () => {
+    const { setUsername } = useContext(useCTXContext);
+
     return (
-        <input 
+        <input
             onChange={(e) => {
                 setUsername(e.target.value);
             }}
