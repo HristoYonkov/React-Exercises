@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { useCTXContext } from '../../containers/UseContext/UseContext'
 
-const User = ({ username }) => {
+const User = () => {
+    const { username } = useContext(useCTXContext);
+
     return (
         <div>
             <h1>User: {username}</h1 >
