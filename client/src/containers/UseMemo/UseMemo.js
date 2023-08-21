@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
-
+// Used for complex computations when certain function needs more time!
+// And for example useMemo hook meorize the value until data has changed
+// So the component will safe more time next time when re-render.
 const UseMemo = () => {
     const [data, setData] = useState(null);
     const [toggle, setToggle] = useState(false);
