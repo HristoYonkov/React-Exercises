@@ -54,8 +54,6 @@ const RouterRoot = () => {
       </nav>
     </header>
 
-    <div>
       <Outlet />
-    </div>
   </>
 }
