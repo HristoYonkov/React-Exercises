@@ -10,10 +10,25 @@ const UseMemo = () => {
             .then((data) => {
                 setData(data);
             })
-            
-        }, []);
-        
-        console.log(data);
+
+    }, []);
+
+    console.log(data);
+    const findLongestName = (comments) => {
+        if (!comments) return null;
+
+        let longestName = '';
+        for (let i = 0; i < comments.length; i++) {
+            let currentName = comments[i];
+            if (currentName.length > longestName.length) {
+                longestName = currentName;
+            }
+        }
+
+        console.log('This was Computed!');
+        return longestName;
+    } 
+
     return (
         <>
             <h1>UseMemo</h1>
