@@ -1,5 +1,8 @@
 import React, { useRef } from 'react'
 import Button from '../../components/Button/Button';
+// Alter way for setting the toggle state in the child component,
+// instead of setting it in the parent state!
+// In other words, you can change the state in child component, from parent one!
 
 const UseImperativeHandle = () => {
     const buttonRef = useRef(null);
