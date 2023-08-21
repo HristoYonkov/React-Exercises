@@ -5,7 +5,7 @@ function Child({ returnComment }) {
         console.log('Function was Invoked!');
     }, [returnComment])
 
-    return <p>{returnComment(' - Guest')}</p>
+    return <h4>{returnComment(' - Guest')}</h4>
 }
 
 export default Child
