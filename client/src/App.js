@@ -10,6 +10,7 @@ import UseMemo from './containers/UseMemo/UseMemo';
 import UseCallback from './containers/UseCallback/UseCallback';
 
 function App() {
+  // The new version of router in react!
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RouterRoot />} >
