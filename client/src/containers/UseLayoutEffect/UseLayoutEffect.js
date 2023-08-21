@@ -1,8 +1,8 @@
 import React, {useLayoutEffect, useEffect, useRef} from 'react'
+// useLayoutEffect hook is triggering before useEffect hook!
 
 const UseLayoutEffect = () => {
     const inputRef = useRef(null);
-    // useLayoutEffect hook is triggering before useEffect hook!
     useLayoutEffect(() => {
         console.log(inputRef.current.value);
         inputRef.current.value = 'useLayoutEffect'
