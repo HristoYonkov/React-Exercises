@@ -7,6 +7,7 @@ import UseLayoutEffect from './containers/UseLayoutEffect/UseLayoutEffect';
 import UseImperativeHandle from './containers/UseImperativeHandle/UseImperativeHandle';
 import UseContext from './containers/UseContext/UseContext';
 import UseMemo from './containers/UseMemo/UseMemo';
+import UseCallback from './containers/UseCallback/UseCallback';
 
 function App() {
   const router = createBrowserRouter(
@@ -19,6 +20,7 @@ function App() {
         <Route path='/useImperativeHandle' element={<UseImperativeHandle />} />
         <Route path='/useContext' element={<UseContext />} />
         <Route path='/useMemo' element={<UseMemo />} />
+        <Route path='/useCallback' element={<UseCallback />} />
       </Route>
     )
   );
@@ -43,9 +45,11 @@ const RouterRoot = () => {
         <Link to={'/useReducer'} >useReducer()</Link>
         <Link to={'/useRef'} >useRef()</Link>
         <Link to={'/useLayoutEffect'} >useLayoutEffect()</Link>
+        <br/>
         <Link to={'/useImperativeHandle'} >useImperativeHandle()</Link>
         <Link to={'/useContext'} >useContext()</Link>
         <Link to={'/useMemo'} >useMemo()</Link>
+        <Link to={'/useCallback'} >useCallback()</Link>
       </nav>
     </header>
 
