@@ -10,6 +10,10 @@ import React, { useReducer } from 'react'
 // but is more helpful for managing state across multiple components
 // that may involve different operations or "actions".
 
+// You will need to reach for useReducer less than useState around your app.
+// But it is very helpful as a powerful means of managing state in smaller applications,
+// rather than having to reach for a third-party state management library like Redux.
+
 
 const reducer = (state, action) => {
   switch (action.type) {
