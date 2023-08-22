@@ -3,6 +3,14 @@ import React, { useReducer } from 'react'
 // useReducer is a hook for state management, much like useState,
 // and relies upon a kind of function called a reducer.
 
+// Reducers are simple, predictable (pure) functions that take a previous state object
+// and an action object and return a new state object.
+
+// useReducer can be used in many of the same ways that useState can,
+// but is more helpful for managing state across multiple components
+// that may involve different operations or "actions".
+
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'increment':
