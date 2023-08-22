@@ -1,4 +1,7 @@
 import React, { useReducer } from 'react'
+// useReducer is (Another) Powerful State Management Tool
+// useReducer is a hook for state management, much like useState,
+// and relies upon a kind of function called a reducer.
 
 const reducer = (state, action) => {
   switch (action.type) {
