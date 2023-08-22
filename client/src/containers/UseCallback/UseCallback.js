@@ -5,6 +5,10 @@ import Child from '../../components/Child/Child';
 
 // useCallback Prevents Callbacks from Being Recreated
 // useCallback is a hook that is used for improving our component performance.
+// The most common usage is to have a parent component with a state variable,
+// but you want to update that state from a child component.
+// What do you do? You pass down a callback function to the child from the parent.
+// That allows us to update state in the parent component.
 // useCallback memoizes our callback functions, so they not recreated on every re-render.
 // Using useCallback correctly can improve the performance of our app.
 
