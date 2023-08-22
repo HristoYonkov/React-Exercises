@@ -1,5 +1,9 @@
 import React, { useRef } from 'react'
-// Access dom element when we need.
+// Access React-Dom element when we need.
+// useRef to Reference React Elements..
+// Refs are a special attribute that are available on all React components.
+// They allow us to create a reference to a given element / component-
+// when the component mounts.
 
 const UseRef = () => {
     const inputRef = useRef(null);
